@@ -1,4 +1,4 @@
-export const product = {
+export const inventory = {
     id: 'soup-for-my-family',
     name: 'soup-for-my-family',
     image: 'soup-for-my-family.png',
@@ -6,3 +6,4 @@ export const product = {
     category: 'food',
     price: 13.12,
 };
+
