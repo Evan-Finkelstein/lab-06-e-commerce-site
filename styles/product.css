@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+img{
+    height: 75%;
+    width: 75%;
+}
+
+.id{
+    display: none;
+}
+.category{
+    display: none;
+}
+
+li{
+    border: solid black 1px;
+    width: 300px;
+    margin-top: 15px;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+}
+button{
+    margin-bottom: 5px;
+}
