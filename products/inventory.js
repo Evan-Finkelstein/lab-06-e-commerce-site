@@ -1,4 +1,4 @@
-import { inventory } from './data.js';
+import { inventory } from '../data.js';
 import { renderProduct } from './render-product.js'
 
 const inventoryList = document.querySelector('#inventory-list');

@@ -4,8 +4,22 @@
 
 
 
+table {
+    width: 100%;
+    border: solid 1px;
+}
 
+td, th {
+    border: solid 1px
+}
 
+th {
+    background-color: rgb(152, 161, 235);
+}
+
+tr:nth-child(even) {
+    background: rgb(193, 235, 188);
+}
 
 
 img{

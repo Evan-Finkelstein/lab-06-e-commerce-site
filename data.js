@@ -7,11 +7,11 @@ export const inventory = [{
     price: 0.45,
 },{
     id: 'apple',
-    name: 'Apple with a bite taken out of it',
+    name: 'Apple',
     image: 'apple.png',
-    description: 'Deadly projectile, might contain worms.',
+    description: 'Apple with a bite taken out of it.',
     category: 'weapon',
-    price: 0,  
+    price: 5.00,  
 },{
     id: 'shield',
     name: 'Homemade Shield',
@@ -32,10 +32,24 @@ export const inventory = [{
     image: 'milk-shake.png',
     description: 'Delicious and high calorie. Absolutely do not throw on fascists.',
     category: 'weapon',
-    price: 1000,  
+    price: 1000.00,  
 },
 ];
 
 
 
 
+export const cart = [
+    {
+        id: 'soup-for-my-family',
+        quantity: 3,
+    },
+    {
+        id: 'apple',
+        quantity: 2,
+    },
+    {
+        id: 'milk-shake',
+        quantity: 2,
+    },
+];
