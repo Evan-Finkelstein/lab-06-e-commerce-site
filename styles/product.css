@@ -21,13 +21,30 @@ img{
 }
 
 li{
-    border: solid black 1px;
+    border: solid black 3px;
     width: 300px;
     margin-top: 15px;
     border-radius: 5px;
     justify-content: center;
     text-align: center;
+    background-color:rgb(238, 237, 226);
+
 }
 button{
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.name{
+    font-size: 1.5em;
+    font-family: fantasy;
+    text-decoration: underline;
+}
+.price{
+    text-decoration: underline;
+    
+
+}
+.description{
+    font-size: 1.1em;
+
 }
