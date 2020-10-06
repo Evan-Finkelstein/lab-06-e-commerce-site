@@ -48,12 +48,7 @@ button{
     font-size: 1.1em;
 
 }
-header {
-    font-size: 3em;
-    font-family: monospace;
-    margin-top: 20px;
-   text-align: center;
-}
+
 
 body {
     --color1: #ffffff;
@@ -110,7 +105,7 @@ header {
     font-size: 3em;
     font-family: monospace;
     margin-top: 20px;
-   text-align: center;
+    text-align: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);

@@ -54,7 +54,7 @@ header {
     font-size: 3em;
     font-family: monospace;
     margin-top: 20px;
-   text-align: center;
+    text-align: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
@@ -81,9 +81,7 @@ h2 {
     animation: pulse 5s infinite ease-in-out;
 }
 
-header img {
-    height: var(--header-height);
-}
+
 
 
 
