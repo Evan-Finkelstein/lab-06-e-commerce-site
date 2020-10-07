@@ -9,13 +9,13 @@ export function clearCart(cart){
     window.location.href = './thank-you.html'
     }
 
-export function setCart( product, option){
+export function setCart( product){
         const cart2 = getFromLocalStorage(CART) || [];
         const itemsInCart = findById (cart2, product.id);
         if (itemsInCart === undefined){
             const newCartItem = {
                 id: product.id,
-                quantity: 1 * option,
+                quantity: 1,
             }
             cart2.push(newCartItem);
         } else {
