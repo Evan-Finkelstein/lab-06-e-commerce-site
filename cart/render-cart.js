@@ -1,5 +1,5 @@
 import { inventory } from '../data.js';
-import { findById, calcLineItem, orderTotal } from '../utils.js';
+import { findById, calcLineItem,  } from '../utils.js';
 
 
 export function renderCart(cartItem){
