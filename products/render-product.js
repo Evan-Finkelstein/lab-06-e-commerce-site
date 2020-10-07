@@ -1,9 +1,6 @@
 
 import { setCart } from '../cart-functions.js'
 
-import { getFromLocalStorage, setInLocalStorage } from '../local-storage-utils.js'
-import { findById } from '../utils.js'
-
 export const CART = 'CART';
 
 export function renderProduct(product){
@@ -15,10 +12,10 @@ const description = document.createElement('p');
 const category = document.createElement('p');
 const price = document.createElement('p');
 const button = document.createElement('button');
-const numberSelector = document.createElement('select');
-const option1 = document.createElement('option');
-const option2 = document.createElement('option');
-const option3 = document.createElement('option');
+// const numberSelector = document.createElement('select');
+// const option1 = document.createElement('option');
+// const option2 = document.createElement('option');
+// const option3 = document.createElement('option');
 
 id.classList.add('id');
 id.textContent = product.id;
@@ -43,16 +40,20 @@ price.classList.add('price');
 price.textContent =`$${product.price}`;
 li.appendChild(price);
 
-li.appendChild(numberSelector);
-option1.textContent = 1;
-option2.textContent = 2;
-option3.textContent = 3;
-numberSelector.appendChild(option1);
-numberSelector.appendChild(option2);
-numberSelector.appendChild(option3);
+// li.appendChild(numberSelector);
+// option1.value = 1;
+
+// option2.value = 2;
+
+// option3.value = 3;
+
+// numberSelector.appendChild(option1);
+// numberSelector.appendChild(option2);
+// numberSelector.appendChild(option3);
 
 
 button.textContent = 'Add To Cart';
+// const option = numberSelector.option.value
 button.addEventListener('click', () => {
 setCart(product)
 })
