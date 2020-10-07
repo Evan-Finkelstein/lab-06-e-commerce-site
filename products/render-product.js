@@ -1,4 +1,5 @@
 
+import { setCart } from '../cart-functions.js'
 
 import { getFromLocalStorage, setInLocalStorage } from '../local-storage-utils.js'
 import { findById } from '../utils.js'
@@ -14,6 +15,10 @@ const description = document.createElement('p');
 const category = document.createElement('p');
 const price = document.createElement('p');
 const button = document.createElement('button');
+const numberSelector = document.createElement('select');
+const option1 = document.createElement('option');
+const option2 = document.createElement('option');
+const option3 = document.createElement('option');
 
 id.classList.add('id');
 id.textContent = product.id;
@@ -38,22 +43,21 @@ price.classList.add('price');
 price.textContent =`$${product.price}`;
 li.appendChild(price);
 
+li.appendChild(numberSelector);
+option1.textContent = 1;
+option2.textContent = 2;
+option3.textContent = 3;
+numberSelector.appendChild(option1);
+numberSelector.appendChild(option2);
+numberSelector.appendChild(option3);
+
+
 button.textContent = 'Add To Cart';
 button.addEventListener('click', () => {
-const cart = getFromLocalStorage(CART) || [];
-const itemsInCart = findById (cart, product.id);
-if (itemsInCart === undefined){
-    const newCartItem = {
-        id: product.id,
-        quantity: 1,
-    }
-    cart.push(newCartItem);
-} else {
-    itemsInCart.quantity++;
-}
-
-setInLocalStorage(CART, cart);
+setCart(product)
 })
+
+
 li.appendChild(button);
 
 return li;
