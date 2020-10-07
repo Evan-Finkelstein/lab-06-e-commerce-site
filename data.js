@@ -4,7 +4,7 @@ export const inventory = [{
     image: 'soup-for-my-family.png',
     description: 'Soup to feed your family!',
     category: 'weapon',
-    price: 0.45,
+    price: 1.00,
 },{
     id: 'apple',
     name: 'Apple',
@@ -39,17 +39,17 @@ export const inventory = [{
 
 
 
-export const cart = [
-    {
-        id: 'soup-for-my-family',
-        quantity: 3,
-    },
-    {
-        id: 'apple',
-        quantity: 2,
-    },
-    {
-        id: 'milk-shake',
-        quantity: 2,
-    },
-];
+// export const cart = [
+//     {
+//         id: 'soup-for-my-family',
+//         quantity: 3,
+//     },
+//     {
+//         id: 'apple',
+//         quantity: 2,
+//     },
+//     {
+//         id: 'milk-shake',
+//         quantity: 2,
+//     },
+// ];
