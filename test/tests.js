@@ -4,4 +4,5 @@ import './calc-line-item.test.js';
 import './render-cart.test.js';
 import './order-total.test.js';
 import './local-storage-utils.test.js';
+import './add-product.test.js';
 
