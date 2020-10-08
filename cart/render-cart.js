@@ -1,7 +1,7 @@
-import { inventory } from '../data.js';
+import { getLocalStorage } from '../local-storage-utils.js';
 import { findById, calcLineItem,  } from '../utils.js';
 
-
+const inventory = getLocalStorage();
 export function renderCart(cartItem){
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');

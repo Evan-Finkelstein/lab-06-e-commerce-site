@@ -1,5 +1,5 @@
 
-import { setCart } from '../cart-functions.js'
+import { setCart } from '../cart-functions.js';
 
 export const CART = 'CART';
 
@@ -55,7 +55,7 @@ li.appendChild(price);
 button.textContent = 'Add To Cart';
 // const option = numberSelector.option.value
 button.addEventListener('click', () => {
-setCart(product)
+setCart(product);
 })
 
 

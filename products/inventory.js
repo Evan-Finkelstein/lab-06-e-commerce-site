@@ -1,10 +1,10 @@
-import { inventory } from '../data.js';
-import { renderProduct } from './render-product.js'
+import { getLocalStorage  } from '../local-storage-utils.js';
+import { renderProduct } from './render-product.js';
 
 const inventoryList = document.querySelector('#inventory-list');
-
-for( let i = 0; i < inventory.length; i++){
-    const product = inventory[i];
+const  fullInventory = getLocalStorage();
+for( let i = 0; i < fullInventory.length; i++){
+    const product = fullInventory[i];
     const li = renderProduct(product);
 
     inventoryList.appendChild(li);

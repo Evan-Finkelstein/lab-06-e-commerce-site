@@ -1,11 +1,23 @@
 import { orderTotal } from '../utils.js';
-import { cart } from '../data.js'
 const test = QUnit.test;
-
+const cart = [
+        {
+            id: 'soup-for-my-family',
+            quantity: 3,
+        },
+        {
+            id: 'apple',
+            quantity: 2,
+        },
+        {
+            id: 'milk-shake',
+            quantity: 2,
+        },
+    ];
 test('should return 18 when passed 3 and 6', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 2011.35
+    const expected = 2013
     ;
     
     //Act 

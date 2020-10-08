@@ -1,13 +1,39 @@
+import { inventory } from './data.js'
+
+const PRODUCTS = 'PRODUCTS'
+
 export function getFromLocalStorage(key) {
-    // remember, we need to parse any values get from local storage
 const item = localStorage.getItem(key);
 
-return JSON.parse(item)
+return JSON.parse(item);
 }
 
-// this function will not return anything
+
 export function setInLocalStorage(key, value) {
-    // remember, we need to stringify any values we want to set into local storage
 const stringyItem = JSON.stringify(value);
 localStorage.setItem(key, stringyItem);
 }
+
+export function addProduct(newItem){
+    const localStorageProducts = getLocalStorage();
+
+    localStorageProducts.push(newItem);
+
+    const stringyLocalProduct = JSON.stringify(localStorageProducts);
+    localStorage.setItem(PRODUCTS, stringyLocalProduct);
+}
+
+export function getLocalStorage(){
+    let localStorageProduct = JSON.parse(localStorage.getItem(PRODUCTS));
+
+    if (!localStorageProduct) {
+        const stringyProducts = JSON.stringify(inventory);
+    
+        localStorage.setItem(PRODUCTS, stringyProducts);
+        localStorageProduct = inventory;
+    }
+    
+    return localStorageProduct;
+    }
+    
+    console.log(getLocalStorage())

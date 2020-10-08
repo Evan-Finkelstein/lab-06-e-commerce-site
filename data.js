@@ -39,17 +39,3 @@ export const inventory = [{
 
 
 
-// export const cart = [
-//     {
-//         id: 'soup-for-my-family',
-//         quantity: 3,
-//     },
-//     {
-//         id: 'apple',
-//         quantity: 2,
-//     },
-//     {
-//         id: 'milk-shake',
-//         quantity: 2,
-//     },
-// ];
