@@ -1,5 +1,6 @@
 
 import { setCart } from '../cart-functions.js';
+// import { removeProduct } from '../local-storage-utils.js';
 
 export const CART = 'CART';
 
@@ -12,6 +13,7 @@ const description = document.createElement('p');
 const category = document.createElement('p');
 const price = document.createElement('p');
 const button = document.createElement('button');
+const removeButton = document.createElement('button')
 // const numberSelector = document.createElement('select');
 // const option1 = document.createElement('option');
 // const option2 = document.createElement('option');
@@ -51,7 +53,10 @@ li.appendChild(price);
 // numberSelector.appendChild(option2);
 // numberSelector.appendChild(option3);
 
-
+removeButton.textContent = 'remove'
+// removeButton.addEventListener('click',() =>{
+//     removeProduct(product)
+// })
 button.textContent = 'Add To Cart';
 // const option = numberSelector.option.value
 button.addEventListener('click', () => {
@@ -60,6 +65,7 @@ setCart(product);
 
 
 li.appendChild(button);
+li.appendChild(removeButton);
 
 return li;
 }
