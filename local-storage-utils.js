@@ -36,4 +36,3 @@ export function getLocalStorage(){
     return localStorageProduct;
     }
     
-    console.log(getLocalStorage())
